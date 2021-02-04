@@ -28,29 +28,7 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
 
-        Card c = new Card();
-        System.out.print("Enter a card value between 1 to 13"
-                + "(Ace=1,JacktoKing=11-13): ");
-        int value = a.nextInt();
-        do {
-            if (value > 13 || value < 1) {
-                System.out.print("Wrong Number try again 1 to 13 "
-                        + "(Ace=1,Jack to King= 11-13): ");
-                value = a.nextInt();
-            }
-        } while (value > 13 || value < 1);
-        c.setValue(value);
-        System.out.print("Enter a Suit (Hearts=0, Diamonds=1,"
-                + " Spades=2 and Clubs=3): ");
-        int suit = a.nextInt();
-        do {
-            if (suit < 0 || suit > 3) {
-                System.out.print("Ivalid Input: Enter a suit"
-                        + "(Hearts=0, Diamonds=1, Spades=2 and Clubs=3): ");
-                suit = a.nextInt();
-            }
-        } while (suit < 0 || suit > 3);
-        c.setSuit(suit);
+        Card luckyCard = new Card("Hearts",12);
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
