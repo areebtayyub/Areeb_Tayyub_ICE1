@@ -34,14 +34,14 @@ public class CardTrick {
         //Then report the result here
         int match = 0;
         for (int index = 0; index < magicHand.length; index++) {
-            if (magicHand[index].getSuit() == c.getSuit()
-                    && magicHand[index].getValue() == c.getValue()) {
+            if (magicHand[index].getSuit() == luckyCard.getSuit()
+                    && magicHand[index].getValue() == luckyCard.getValue()) {
                 match = index;
             }
 
         }
-        if (magicHand[match].getSuit() == c.getSuit()
-                && magicHand[match].getValue() == c.getValue()) {
+        if (magicHand[match].getSuit() == luckyCard.getSuit()
+                && magicHand[match].getValue() == luckyCard.getValue()) {
             System.out.println("Card is in hand");
         } else {
             System.out.println("Card is not in hand");
